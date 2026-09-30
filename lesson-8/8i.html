@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="playGame('head');">heads</button>
+        <button onclick="playGame('tails')">tails</button>
+
+        <script>
+            function playGame(guess){
+                const randomNumber=Math.random();
+                const result =randomNumber<0.5 ?'heads': 'tails';
+
+                console.log(guess === result ? 'You Win!':'you lose');
+            }
+        </script>
+
+    </body>
+</html>
