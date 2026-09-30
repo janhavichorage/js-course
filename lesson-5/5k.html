@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+    <body>
+<button onclick="document.getElementById('paragraph').innerHTML= 'your cart quantity items='+cartquantity">show quantity
+    
+</button>
+
+<button onclick="cartquantity=cartquantity+1">add to cart</button>
+<button onclick="cartquantity=cartquantity+2">+2</button>
+<button onclick="cartquantity=cartquantity+3">+3</button>
+
+<button onclick="cartquantity=cartquantity+3">+4</button>
+<button onclick="cartquantity=cartquantity+3">+5</button>
+<button onclick="cartquantity=cartquantity+3">+5</button>
+<button onclick="cartquantity-=2">-2</button>
+<button onclick="cartquantity-=3">-3</button>
+
+
+<button onclick="cartquantity --">Remove from cart</button>
+<button onclick="cartquantity=cartquantity-cartquantity">Reset cart</button>
+
+<p  id="paragraph"></p>
+<script>
+    let  cartquantity=0;
+</script>
+    </body>
+</head>
+</html>
